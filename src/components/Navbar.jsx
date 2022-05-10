@@ -2,6 +2,9 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../images/logo.svg";
+import SearchIcon from '@mui/icons-material/Search';
+
+
 
 
 
@@ -83,17 +86,20 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
-                    <Logo>
-                        <a href="/">
-                            <img src={logo} className="" style={{ width: "45%" }} alt="logo" />
-                        </a>
-                    </Logo>
+                    <Language>
+                        EN
+                    </Language>
+                    <SearchContainer>
+                        <Input/>
+                        <SearchIcon/>
+                    </SearchContainer>
                 </Left>
                 <Center>
-
-                    <SearchContainer>
-                        
-                    </SearchContainer>
+                    <Logo>
+                        <a href="/">
+                            <img src={logo} className="" style={{ width: "35%" }} alt="logo" />
+                        </a>
+                    </Logo>
                 </Center>
                 <Right>
                     <MenuItem>
